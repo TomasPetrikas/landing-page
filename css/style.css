@@ -146,11 +146,17 @@ button:hover {
 }
 
 .section-1 .image {
-  flex: 1;
-  min-height: 150px; /* don't know how to make this equal to the width */
-                     /* looks terrible on anything other than 1920x1080 */
+  flex: 1 0 auto;
+  height: auto;
   border: 4px #3882f6 solid;
   border-radius: 16px;
+}
+
+/* dirty hack to make the box square */
+.section-1 .image::before {
+  content: '';
+  display: block;
+  padding-top: 100%;
 }
 
 .section-1 .description {
