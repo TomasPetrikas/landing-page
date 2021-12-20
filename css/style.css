@@ -103,6 +103,7 @@ footer {
   padding: 8px 24px;
 }
 
+a:hover,
 button:hover {
   opacity: 0.8;
   cursor: pointer;
