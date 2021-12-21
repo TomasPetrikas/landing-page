@@ -25,7 +25,7 @@ a {
 }
 
 .content > div,header,footer {
-  border: red 2px dotted;
+  /* border: red 2px dotted; */
   padding-left: 20%;
   padding-right: 20%;
 }
@@ -41,8 +41,8 @@ footer {
   align-items: center;
   flex: 1vh;
   background: #1f2937;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 /* logo */
@@ -82,7 +82,6 @@ footer {
 }
 
 .hero .subtext,
-.hero button,
 .hero-right {
   font-size: 18px;
   color: #e5e7eb;
@@ -95,12 +94,14 @@ footer {
   gap: 8px;
 }
 
-.hero button {
+button {
   background: #3882f6;
   font-weight: bold;
+  font-size: 18px;
+  color: #e5e7eb;
   border: none;
   border-radius: 12px; /* makes button round */
-  padding: 8px 24px;
+  padding: 8px 32px;
 }
 
 a:hover,
@@ -114,7 +115,8 @@ button:hover {
   background: #6d747d;
 }
 
-.section-1 * {
+.section-1 *,
+.section-2 * {
   color: black;
 }
 
@@ -164,6 +166,61 @@ button:hover {
   font-size: 18px;
 }
 
+.section-2 {
+  background: #e5e7eb;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.section-2 * {
+  padding-left: 128px;
+  padding-right: 128px
+}
+
+.section-2 .quote-text {
+  font-size: 36px;
+  font-style: italic;
+  color: #1f2937;
+}
+
+.section-2 .quote-author {
+  font-weight: bold;
+  font-size: 24px;
+  margin-right: 48px;
+}
+
+.section-3 {
+  text-align: left;
+}
+
+.section-3 .box {
+  background: #3882f6;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 96px 0;
+  padding: 48px 96px;
+}
+
+.section-3 .title {
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.section-3 .description {
+  font-size: 18px;
+}
+
+.section-3 button {
+  border: 2px white solid;
+}
+
 footer {
   justify-content: center;
+  font-size: 18px;
 }
