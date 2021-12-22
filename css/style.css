@@ -99,6 +99,7 @@ button {
   font-size: 18px;
   color: #e5e7eb;
   border: none;
+  white-space: nowrap;
   border-radius: 12px; /* makes button round */
   padding: 8px 32px;
 }
